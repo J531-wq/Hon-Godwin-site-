@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>House of Assembly — Hon. Godwin Offiono</title>
+  <style>
+    :root{--accent:#0b6b4a;--muted:#f3f6f5;--card:#ffffff}
+    *{box-sizing:border-box}
+
+    /* ✅ Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      background:linear-gradient(180deg,#f7fbfa 0%,#eef6f3 100%);
+      color:#0b2b1f;
+    }
+
+    /* ✅ Fixed header */
+    header{
+      padding:18px 24px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      z-index:1000;
+      background:#fff;
+      box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav{display:flex;gap:12px}
+    nav a{padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--accent);font-weight:600}
+
+    /* ✅ Portrait now separate from header */
+    .portrait-top-right{
+      margin-top:100px; /* Push below fixed nav */
+      display:flex;
+      justify-content:flex-end;
+      padding-right:20px;
+    }
+    .portrait-top-right img{
+      width:220px;
+      border-radius:14px;
+      border:6px solid rgba(255,255,255,0.8);
+      box-shadow:0 10px 30px rgba(10,24,18,0.12);
+      background:#eee;
+    }
+
+    /* Content */
+    .hero{
+      max-width:1200px;
+      margin:40px auto 18px auto;
+      padding:18px;
+      display:flex;
+      gap:24px;
+    }
+    .left{flex:1}
+    .card{background:var(--card);border-radius:14px;box-shadow:0 6px 18px rgba(12,40,25,0.06);padding:20px}
+    h1{margin:0 0 8px 0;font-size:28px}
+    p.lead{margin:0 0 16px 0;color:#264b3a}
+    .accomplishments{display:grid;gap:12px}
+    .item{padding:12px;background:var(--muted);border-radius:10px}
+    .item h3{margin:0 0 6px 0;font-size:16px}
+    .item p{margin:0;color:#234034}
+
+    /* Footer */
+    footer{max-width:1200px;margin:18px auto;padding:12px 18px;text-align:center;color:#2d6a50}
+
+    /* Responsive */
+    @media (max-width:880px){
+      .portrait-top-right{
+        justify-content:center;
+        padding-right:0;
+        margin-top:100px;
+      }
+      .hero{margin-top:20px;flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <!-- ✅ Header only contains logo + nav -->
+  <header>
+    <div class="brand">
+      <div class="logo">HA</div>
+      <div>
+        <div style="font-weight:800">House of Assembly</div>
+        <div style="font-size:12px;color:#2d6a50">Hon. Godwin Offiono — Ogoja/Yala</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ✅ Portrait is separate but appears under header -->
+  <div class="portrait-top-right">
+    <img src="profile_img-5abe8bea.png" alt="Hon. Godwin Offiono portrait">
+  </div>
+
+  <main class="hero">
+    <section class="left card">
+      <h1 id="about">Hon. Godwin Offiono — serving Ogoja/Yala</h1>
+      <p class="lead">Dedicated to community development, security, education and youth empowerment. Below are some of the contributions and initiatives he has supported.</p>
+
+      <div class="accomplishments" id="projects">
+        <div class="item">
+          <h3>Constituency Representation</h3>
+          <p>Represents the people of Ogoja/Yala Federal Constituency in the House of Representatives and is an active member of the People's Democratic Party (PDP).</p>
+        </div>
+        <div class="item">
+          <h3>Security & Police Support</h3>
+          <p>Facilitated construction of a divisional police station and officers' quarters in Okpoma, Yala LGA to boost local security and response capacity.</p>
+        </div>
+        <div class="item">
+          <h3>Rural Electrification & Lighting</h3>
+          <p>Installed solar-powered street lights across strategic locations in Ogoja and Yala to improve safety and night-time activity.</p>
+        </div>
+        <div class="item">
+          <h3>Agricultural Support</h3>
+          <p>Distributed fertilizers, hybrid water-pumping machines and farming inputs to boost productivity among local farmers.</p>
+        </div>
+        <div class="item">
+          <h3>Education & Youth</h3>
+          <p>Provided educational materials to schools across the constituency and founded youth initiatives including a football club to nurture talent.</p>
+        </div>
+        <div class="item">
+          <h3>Humanitarian & Welfare</h3>
+          <p>Delivered welfare support including food distributions, cash grants and assistance to vulnerable community members through the G &amp; S Offiono Foundation.</p>
+        </div>
+      </div>
+
+      <a class="cta" href="#contact">Get in touch</a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <small>Built with care • Responsive layout • Hon. Godwin Offiono official portrait displayed</small>
+  </footer>
+  <h1>creator: Omagu Joseph Ogar</h1>
+</body>
+</html>
